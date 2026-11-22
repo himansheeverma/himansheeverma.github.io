@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Diary | Himanshee Verma</title>
+  <meta name="description" content="Himanshee Verma ki Code Diary: roz ke C programs, code aur live run." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+
+  <!-- ============ ICONS ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5Z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 0c.6 6.5 5.5 11.4 12 12-6.5.6-11.4 5.5-12 12-.6-6.5-5.5-11.4-12-12C6.5 11.4 11.4 6.5 12 0Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">H</span>
+      <span>Himanshee<b>.</b></span>
+    </a>
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="code.html" class="active">Code Diary</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-grad btn-sm nav-cta"><svg class="ic"><use href="#i-mail"/></svg> Say Hello</a>
+    <button class="menu-btn" aria-label="Menu" id="menuBtn"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="cd-hero">
+      <p class="hello">My</p>
+      <h1>Code <span class="grad-text">Diary</span></h1>
+      <p class="sub">Har din jo program likhti hoon, woh yahan date ke saath milega. Code padho, apna input daalo aur <b>Run</b> dabakar asli output dekho.</p>
+      <p class="hand cd-note">one program a day ✦</p>
+      <div class="cd-stats" id="cdStats"></div>
+    </section>
+
+    <!-- Programs programs.js file se aate hain, naye se purane order mein -->
+    <section class="cd-timeline" id="diary"></section>
+  </main>
+
+  <footer class="cd-footer">
+    <p>© <span id="year"></span> Himanshee Verma · <a href="index.html">Back to portfolio</a></p>
+    <p class="cd-credit">Code runs on GCC via <a href="https://godbolt.org" target="_blank" rel="noopener">Compiler Explorer</a></p>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">↑</button>
+
+  <!-- Syntax highlighting (Prism) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+  <script src="programs.js?v=1"></script>
+  <script src="code.js?v=1"></script>
+</body>
+</html>

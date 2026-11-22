@@ -17,6 +17,16 @@
 
 const PROJECTS = [
   {
+    title: "Star Patterns in C",
+    emoji: "⭐",
+    category: "c",
+    desc: "Nested loops se 5 star patterns: triangle, pyramid, diamond aur hollow square. Code Diary mein browser se run karke dekho!",
+    tags: ["C", "Nested Loops"],
+    github: "",
+    live: "code.html#2026-11-21-star-patterns",
+    status: "done",
+  },
+  {
     title: "Personal Portfolio",
     emoji: "🌈",
     category: "web",
