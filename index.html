@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshi Verma | Portfolio</title>
+  <meta name="description" content="Himanshi Verma ka portfolio: B.Tech student, projects aur learning journey." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background blobs -->
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav">
+    <a href="#home" class="logo">HV<span>.</span></a>
+    <button class="menu-btn" aria-label="Menu" id="menuBtn">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">👋 Hello, I'm</p>
+        <h1>Himanshi <span class="grad">Verma</span></h1>
+        <p class="typed-line">I am a <span id="typed"></span><span class="cursor">|</span></p>
+        <p class="sub">A first-year B.Tech student who loves building things with code: websites, games, and all kinds of experiments. Here's my learning journey and projects! 🚀</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">See my projects</a>
+          <a href="#contact" class="btn btn-ghost">Say hi 💬</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="avatar">
+          <!-- ✏️ Photo badalni ho to photo.webp file replace kar do -->
+          <img src="photo.webp" alt="Himanshi Verma" />
+        </div>
+        <div class="float-chip c1">💻 Coding</div>
+        <div class="float-chip c2">🎨 Design</div>
+        <div class="float-chip c3">🐍 Python</div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <h2 class="section-title"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="card about-card">
+          <p>Hi! I'm <b>Himanshi Verma</b>, currently in <b>B.Tech (1st Year)</b>. <!-- ✏️ Apni branch aur college ka naam yahan likho --> </p>
+          <p>I love building new projects, solving problems and trying out new technologies. This website is my digital diary where I share everything I build.</p>
+          <p>Right now I'm focusing on <b>programming basics, web development and DSA</b>.</p>
+        </div>
+        <div class="stats">
+          <div class="stat s-pink"><b id="projCount">0</b><span>Projects</span></div>
+          <div class="stat s-yellow"><b>1st</b><span>Year B.Tech</span></div>
+          <div class="stat s-blue"><b>∞</b><span>Curiosity</span></div>
+          <div class="stat s-green"><b>☕</b><span>Fuelled by chai</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <h2 class="section-title"><span>02.</span> Skills</h2>
+      <p class="section-sub">What I know and what I'm learning 📚</p>
+      <div class="skills-grid">
+        <!-- ✏️ Apni skills yahan badlo. data-level = 0 se 100 tak -->
+        <div class="skill" data-level="70"><span class="skill-name">🔵 C Programming</span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="60"><span class="skill-name">🐍 Python</span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="65"><span class="skill-name">🌐 HTML</span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="55"><span class="skill-name">🎨 CSS</span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="40"><span class="skill-name">⚡ JavaScript</span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="35"><span class="skill-name">🌱 Git &amp; GitHub</span><div class="bar"><i></i></div></div>
+      </div>
+      <div class="tools">
+        <span>VS Code</span><span>Git</span><span>GitHub</span><span>Canva</span><span>Figma</span><span>Linux</span>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <h2 class="section-title"><span>03.</span> Projects</h2>
+      <p class="section-sub">Naya project add karna hai? Bas <code>projects.js</code> file edit karo ✨</p>
+      <div class="filters" id="filters"></div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- ============ JOURNEY / ACHIEVEMENTS ============ -->
+    <section id="journey" class="section">
+      <h2 class="section-title"><span>04.</span> Journey &amp; Achievements</h2>
+      <p class="section-sub">Meri learning timeline 🗺️</p>
+      <!-- ✏️ Yahan apne milestones, certificates, hackathons add karo -->
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot" style="--c: var(--pink)"></div>
+          <div class="card t-card">
+            <span class="t-date">2026</span>
+            <h3>🎓 Started B.Tech</h3>
+            <p>College ka pehla saal shuru hua, aur saath mein coding ka safar bhi!</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot" style="--c: var(--yellow)"></div>
+          <div class="card t-card">
+            <span class="t-date">2026</span>
+            <h3>💻 First "Hello World"</h3>
+            <p>C language mein pehla program likha aur run kiya.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot" style="--c: var(--blue)"></div>
+          <div class="card t-card">
+            <span class="t-date">2026</span>
+            <h3>🌐 Built this portfolio</h3>
+            <p>HTML, CSS aur JavaScript seekh kar apni khud ki website banayi.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot" style="--c: var(--green)"></div>
+          <div class="card t-card">
+            <span class="t-date">Next</span>
+            <h3>🏆 First Hackathon</h3>
+            <p>Coming soon... 👀</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <h2 class="section-title"><span>05.</span> Contact</h2>
+      <div class="card contact-card">
+        <h3>Chalo saath mein kuch banate hain! 🤝</h3>
+        <p>Koi idea ho, collaboration karna ho, ya bas hi bolna ho, message karo.</p>
+        <!-- ✏️ Apne asli links yahan daalo -->
+        <div class="socials">
+          <a class="social s-pink" href="mailto:your.email@example.com">📧 Email</a>
+          <a class="social s-blue" href="https://github.com/himansheeverma" target="_blank" rel="noopener">🐙 GitHub</a>
+          <a class="social s-yellow" href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a class="social s-green" href="https://instagram.com/your-username" target="_blank" rel="noopener">📸 Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💖 &amp; lots of ☕ by Himanshi Verma · <span id="year"></span></p>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
